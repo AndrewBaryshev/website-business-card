@@ -2,6 +2,7 @@ const descriptionBlock = document.querySelector(".description")
 const experienceBlock = document.querySelector(".work-experience")
 const contactsBlock = document.querySelector(".my-contacts")
 
+
 const descriptionButton = document.querySelector(".secion-me")
 const experienceButton = document.querySelector(".secion-experience")
 const contactsButton = document.querySelector(".section-contacts")
