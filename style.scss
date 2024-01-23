@@ -38,8 +38,8 @@ body {
   max-width: 530px;
   width: 70vw;
   border-radius: 25px;
-  background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.208);
+  background: linear-gradient(0deg, #bea9dd 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 0px 7px #7f79b447;
   &__container {
     padding: 25px 40px 0px 40px;
   }
@@ -320,7 +320,7 @@ body {
 
 .menu-hover:hover, .button-hover {
   cursor: pointer;
-  box-shadow: 1px -1px 7px 0.5px rgba(120, 13, 134, 0.374);
+  box-shadow: 0px 0px 4px 0.5px rgba(43, 13, 134, 0.374);
   border-radius: 5px;
 }
 
@@ -473,15 +473,15 @@ body {
   color: #161017cb;
   border-radius: 25px;
   padding: 8px 18px;
-  background-color: #C190E1;
+  background-color: #695edfd7;
   text-align: center;
-  box-shadow: 2px 2px 1px 1px #00000041;
+  box-shadow: 2px 2px 4px 1px #00000041;
   font-weight: 500;
   width: 100%;
 }
 
 .button-request:hover {
-  background-color: #924ac3;
+  background-color: #5548e6d1;
   color: #553258;
 }
 
