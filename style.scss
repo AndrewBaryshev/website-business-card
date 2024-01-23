@@ -20,10 +20,9 @@ $line-color: #371f99b1;
 }
 
 body {
-  background-color: #76467A;
+  background-color: #7a7a78a7;
   color: #2a0e27;
   font-family: 'Inter';
-  background-image: url('./img/background_2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -66,7 +65,7 @@ body {
 .me-head {
   display: flex;
   flex-direction: row;
-  color: #d0cddf;
+  color: #000000;
 }
 
 .my-name {
@@ -96,28 +95,28 @@ body {
 .name-expand {
   animation: nameExpand $appear-duration ease-in;
   font-size: calc($fz-base + 10 * (100vw / 1800));
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
 .name-decrease {
   animation: nameDecrease $appear-duration ease-in;
   font-size: calc($fz-lowest + 10 * (100vw / 1800));
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
 .career-expand {
   animation: careerExpand $appear-duration ease-in;
   font-size: calc($fz-lower + 7 * (100vw / 1800));
-  font-weight: 600;
+  font-weight: 400;
   animation: careerAnim 8s ease-in infinite;
 }
 
 .career-decrease {
   animation: careerDecrease $appear-duration ease-in;
   font-size: calc($fz-lowest + 7 * (100vw / 1800));
-  font-weight: 600;
+  font-weight: 400;
   animation: careerAnim 8s ease-in infinite;
 }
 
@@ -199,22 +198,22 @@ body {
   100% {
     font-size: calc($fz-lowest + 7 * (100vw / 1800));
     font-weight: 600;
-    animation: careerAnim 8s ease-in infinite;
+    animation: careerAnim 3s ease-in infinite;
   }
 }
 
 @keyframes careerAnim {
   0% {
-    text-shadow: 2px 2px 4px #b23e14f1;
-  }
-  25% {
-    text-shadow: 2px 2px 4px #bdcf35e9;
+    text-shadow: 1px 1px 2px #924ac3;
   }
   50% {
-    text-shadow: 2px 2px 4px #2456d4e7;
+    text-shadow: 1px 1px 2px #371f99b1;
+  }
+  75% {
+    text-shadow: 1px 1px 2px #c36c4a;
   }
   100% {
-    text-shadow: 2px 2px 4px #b44e26e9;
+    text-shadow: 1px 1px 2px #924ac3;
   }
 }
 
@@ -222,7 +221,7 @@ body {
 .description {
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   gap: 10px;
   animation: Description $appear-duration ease-in;
   &__name{
@@ -257,12 +256,12 @@ body {
   75% {
     opacity: 0.75;
     gap: 8px;
-    padding: 32px 0;
+    padding: 40px 0 20px 0;
   }
   100% {
     opacity: 1;
     gap: 10px;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
   }
 }
 
