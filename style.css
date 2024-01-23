@@ -13,10 +13,9 @@
 }
 
 body {
-  background-color: #76467A;
+  background-color: rgba(122, 122, 120, 0.6549019608);
   color: #2a0e27;
   font-family: "Inter";
-  background-image: url("./img/background_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -57,7 +56,7 @@ body {
 .me-head {
   display: flex;
   flex-direction: row;
-  color: #d0cddf;
+  color: #000000;
 }
 
 .my-name {
@@ -87,28 +86,28 @@ body {
 .name-expand {
   animation: nameExpand 0.3s ease-in;
   font-size: calc(18px + 0.5555555556vw);
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
 .name-decrease {
   animation: nameDecrease 0.3s ease-in;
   font-size: calc(11px + 0.5555555556vw);
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
 .career-expand {
   animation: careerExpand 0.3s ease-in;
   font-size: calc(14px + 0.3888888889vw);
-  font-weight: 600;
+  font-weight: 400;
   animation: careerAnim 8s ease-in infinite;
 }
 
 .career-decrease {
   animation: careerDecrease 0.3s ease-in;
   font-size: calc(11px + 0.3888888889vw);
-  font-weight: 600;
+  font-weight: 400;
   animation: careerAnim 8s ease-in infinite;
 }
 
@@ -185,27 +184,27 @@ body {
   100% {
     font-size: calc(11px + 0.3888888889vw);
     font-weight: 600;
-    animation: careerAnim 8s ease-in infinite;
+    animation: careerAnim 3s ease-in infinite;
   }
 }
 @keyframes careerAnim {
   0% {
-    text-shadow: 2px 2px 4px rgba(178, 62, 20, 0.9450980392);
-  }
-  25% {
-    text-shadow: 2px 2px 4px rgba(189, 207, 53, 0.9137254902);
+    text-shadow: 1px 1px 2px #924ac3;
   }
   50% {
-    text-shadow: 2px 2px 4px rgba(36, 86, 212, 0.9058823529);
+    text-shadow: 1px 1px 2px rgba(55, 31, 153, 0.6941176471);
+  }
+  75% {
+    text-shadow: 1px 1px 2px #c36c4a;
   }
   100% {
-    text-shadow: 2px 2px 4px rgba(180, 78, 38, 0.9137254902);
+    text-shadow: 1px 1px 2px #924ac3;
   }
 }
 .description {
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   gap: 10px;
   animation: Description 0.3s ease-in;
 }
@@ -240,12 +239,12 @@ body {
   75% {
     opacity: 0.75;
     gap: 8px;
-    padding: 32px 0;
+    padding: 40px 0 20px 0;
   }
   100% {
     opacity: 1;
     gap: 10px;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
   }
 }
 .icons-soc {
