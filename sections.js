@@ -15,9 +15,15 @@ myName.classList.add("name-expand")
 myCareer.classList.add("career-expand")
 
 const sections = {'Description': descriptionBlock, 'Experience': experienceBlock, 'Contacts': contactsBlock}
-const currentAppState = {currState: 'Description', 'currButton': descriptionButton}
+const currentAppState = {currState: 'Description', currButton: descriptionButton}
 
 descriptionButton.classList.add("button-hover")
+
+function hideAllSections() {
+  descriptionBlock.style.display = 'none';
+  experienceBlock.style.display = 'none';
+  contactsBlock.style.display = 'none';
+}
 
 function openSection(appState, payload, elem) {
   if(appState.currState === payload) {
@@ -25,18 +31,38 @@ function openSection(appState, payload, elem) {
   }
   switch(appState.currState) {
     case 'Description':
-      descriptionBlock.style.display = 'none'
+      descriptionBlock.classList.remove("appear")
+      descriptionBlock.classList.add('disappear')
+      setTimeout(() => {
+        hideAllSections()
+        helperAddAnimation(appState, payload, elem);
+      }, 120)
       break;
     case 'Experience':
-      experienceBlock.style.display = 'none'
+      experienceBlock.classList.remove("appear")
+      experienceBlock.classList.add('disappear')
+      setTimeout(() => {
+        hideAllSections()
+        helperAddAnimation(appState, payload, elem);
+      }, 120)
       break;
     case 'Contacts':
-      contactsBlock.style.display = 'none'
+      contactsBlock.classList.remove("appear")
+      contactsBlock.classList.add('disappear')
+      setTimeout(() => {
+        hideAllSections()
+        helperAddAnimation(appState, payload, elem);
+      }, 120)
       break;
     default:
-      console.log('Error occurred. Please, check your CPU burden.')
+      console.log('Error occurred.')
   }
+}
+
+function helperAddAnimation(appState, payload, elem) {
   sections[payload].style.display = 'flex'
+  sections[payload].classList.remove('disappear')
+  sections[payload].classList.add('appear')
   changeScale(appState.currState, payload)
   appState.currState = payload
   currentAppState.currButton.classList.remove("button-hover")

@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online business card</title>
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./styles/style.scss">
+    <script src="loading.js"></script>
   </head>
   <body>
+    <canvas id="canvas"></canvas>
+    <div class="cube-container">
+      <div class="cube-loading">
+        <div class="face front">Loading...</div>
+        <div class="face back">Loading...</div>
+        <div class="face right">Loading...</div>
+        <div class="face left">Loading...</div>
+        <div class="face top">Loading...</div>
+        <div class="face bottom"></div>
+      </div>
+    </div>
     <section class="main transition">
       <div class="main__container">
+        <div class="sections-menu">
+          <div class="secion-me menu-hover transition">Me</div>
+          <div class="secion-experience menu-hover transition">Experience</div>
+          <div class="section-contacts menu-hover transition">Contacts</div>
+          <div class="section-contacts menu-hover transition">Projects</div>
+        </div>
         <div class="me-head">
-          <img class="my-photo" src="img/Me-online-card.png" alt="">
+          <img class="my-photo" src="img/me-border-3.png" alt="">
           <div class="my-name">
             <div class="full-name">Andrew Baryshev</div>
             <div class="career">UI Developer</div>
@@ -18,16 +36,30 @@
         </div>
         <div class="description">
           <div class="description__name">Me</div>
-          <div class="description__body transition">Frontend web-developer, js-nailer with React in the bosom</div>
+          <div class="description__body transition">
+            <p class="description-p">Frontend web-developer.</p>
+            <div class="description-p">My tech stack is:
+              <div class="description-div">
+                <div>TypeScript</div>
+                <div>React</div>
+                <div>MobX</div>
+                <div>Redux-toolkit</div>
+                <div>Vite</div>
+                <div>Webpack</div>
+                <div>Docker</div>
+              </div>
+            </div>
+            <p class="description-p">My github account: <a class="link" href="https://github.com/AndrewBaryshev">here</a>.</p>
+          </div>
           <div class="icons-soc">
             <a href="https://t.me/andrew2959" target="_blank">
-              <img class="icon-business" src="img/tg.svg" alt="">
+              <img class="icon-business" src="img/tg-me.svg" alt="">
             </a>
             <a href="https://vk.com/andrew2959" target="_blank">
-              <img class="icon-business" src="img/vk.svg" alt="">
+              <img class="icon-business" src="img/vk-me.svg" alt="">
             </a>
             <a href="https://wa.me/89215549285" target="_blank">
-              <img class="icon-business" src="img/cap.svg" alt="">
+              <img class="icon-business" src="img/cap-me.svg" alt="">
             </a>
           </div>
         </div>
@@ -46,7 +78,7 @@
                     Aston
                   </div>
                   <div class="place-description">
-                    Working with bank apps, creating new ineractive,
+                    Working with bank apps, creating new interfaces,
                     testing, optimization, bug fixing
                   </div>
                 </div>
@@ -98,15 +130,10 @@
             send a request
           </a>
         </div>
-        <div class="line"></div>
-        <div class="sections-menu">
-          <div class="secion-me menu-hover transition">Me</div>
-          <div class="secion-experience menu-hover transition">Experience</div>
-          <div class="section-contacts menu-hover transition">Contacts</div>
-        </div>
       </div>
     </section>
     <script src="sections.js"></script>
+    <script src="canvasAnimation.js"></script>
   </body>
 </html>
 

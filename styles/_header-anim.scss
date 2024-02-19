@@ -1,0 +1,77 @@
+@keyframes photoExpand {
+  0% {
+    max-width: 100px;
+    max-height: 100px;
+    height: 13vw;
+    width: 13vw;
+  }
+  100% {
+    max-width: 170px;
+    max-height: 170px;
+    height: 26vw;
+    width: 26vw;
+  }
+}
+
+@keyframes photoDecrease {
+  0% {
+    max-width: 170px;
+    max-height: 170px;
+    height: 26vw;
+    width: 26vw;
+  }
+  100% {
+    max-width: 100px;
+    max-height: 100px;
+    height: 13vw;
+    width: 13vw;
+  }
+}
+
+@keyframes nameExpand {
+  0% {
+    font-size: calc($fz-lowest + 10 * (100vw / 1800));
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  100% {
+    font-size: calc($fz-base + 10 * (100vw / 1800));
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes nameDecrease {
+  0% {
+    font-size: calc($fz-base + 10 * (100vw / 1800));
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  100% {
+    font-size: calc($fz-lowest + 10 * (100vw / 1800));
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes careerExpand {
+  0% {
+    font-size: calc($fz-lowest + 7 * (100vw / 1800));
+    font-weight: 600;
+  }
+  100% {
+    font-size: calc($fz-lower + 7 * (100vw / 1800));
+    font-weight: 600;
+  }
+}
+
+@keyframes careerDecrease {
+  0% {
+    font-size: calc($fz-lower + 7 * (100vw / 1800));
+    font-weight: 600;
+  }
+  100% {
+    font-size: calc($fz-lowest + 7 * (100vw / 1800));
+    font-weight: 600;
+  }
+}

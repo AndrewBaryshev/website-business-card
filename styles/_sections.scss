@@ -1,0 +1,84 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 20px 0;
+  gap: 10px;
+  animation: ScaleSections $appear-duration ease-in;
+  &__name{
+    font-weight: 600;
+    font-size: calc($fz-lower + 10 * (100vw / 1800));
+  }
+  &__body {
+    font-size: calc($fz-lower + 10 * (100vw / 1800));
+    font-weight: 400;
+    line-height: 137%;
+    letter-spacing: 0.96px;
+    width: 80%;
+  }
+}
+
+.work-experience {
+  animation: ScaleSections $appear-duration ease-in;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 0;
+  font-size: calc($fz-lower + 10 * (100vw / 1800));
+}
+
+.my-contacts {
+  animation: ScaleSections $appear-duration ease-in;
+  padding: 40px 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: calc($fz-lower + 10 * (100vw / 1800));
+  gap: 30px;
+}
+
+.appear {
+  animation: AppearSections $appear-duration ease-in ;
+}
+
+.disappear {
+  animation: DisappearSections $appear-duration ease-in;
+}
+
+@keyframes AppearSections {
+  0% {
+    transform: translate(-5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes DisappearSections {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-5%);
+    opacity: 0;
+  }
+}
+
+.animated-background {
+  animation: AnimateBackground 2s ease-in;
+}
+
+@keyframes AnimateBackground {
+  0% {
+    background-color: #F1EFED;
+  }
+  50% {
+    background-color: #92cece;
+  }
+  100% {
+    background-color: #F1EFED;
+  }
+}
+
